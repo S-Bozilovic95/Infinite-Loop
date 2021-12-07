@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600&display=swap');
+
+// VARIABLES
+$blue:#335578;
+$lightBlue: #38B;
+$white:white;
+$transition: .6s ease;
+$padding:50px 0px;
+
+
+// DEAFULT STYLES
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+
+    @media(max-width:768px) {
+        width: 100%;
+    }
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        transition: $transition;
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Outfit', sans-serif;
+}
