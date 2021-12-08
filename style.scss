@@ -255,11 +255,11 @@ header {
             }
         }
 
-
         .row {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
             padding-top: 30px;
 
             article {
@@ -282,10 +282,59 @@ header {
                     text-align: right;
                     font-style: italic;
                 }
-
             }
+        }
+    }
+}
 
 
+
+
+// GALLERY SECTION
+
+
+.gallery {
+    padding: $padding;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        hgroup {
+            text-align: center;
+            padding-bottom: 30px;
+
+            h2 {
+                color: $blue;
+                font-size: 3rem;
+                padding-bottom: 20px;
+            }
+        }
+
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+
+
+            article {
+                flex: 0 0 18%;
+
+
+                img {
+                    width: 100%;
+                    height: 100%;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        transition-duration: .4s;
+                    }
+                }
+            }
         }
     }
 }
